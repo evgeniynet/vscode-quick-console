@@ -40,7 +40,7 @@ function getLogsLines(editor: vs.TextEditor): number[][] {
   if (cell.length > 0) {
     logsLines.push(cell)
   }
-  console.log({ push: logsLines })
+  console.info({ push: logsLines })
   return logsLines
 }
 

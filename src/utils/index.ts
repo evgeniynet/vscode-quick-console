@@ -51,8 +51,8 @@ export function generateLog(
   consoleVariablesName: boolean
 ): string {
   return consoleVariablesName
-    ? `${space}console.log('${log}:', ${log})\n`
-    : `${space}console.log(${log})\n`
+    ? `${space}console.info('${log}:', ${log})\n`
+    : `${space}console.info('',${log})\n`
 }
 
 export function generateLogInObject(
@@ -68,14 +68,14 @@ export function generateLogInObject(
     return log
   })
   return consoleVariablesName
-    ? `${space}console.log('${logs.join(", ")}:', { ${logs.join(", ")} })\n`
-    : `${space}console.log({ ${logs.join(", ")} })\n`
+    ? `${space}console.info('${logs.join(", ")}:', { ${logs.join(", ")} })\n`
+    : `${space}console.info('',{ ${logs.join(", ")} })\n`
 }
 
 export function isStartWithConsole(line: string) {
-  return line.trim().startsWith("console.log(")
+  return line.trim().startsWith("console.info(")
 }
 
 export function isStartWithCommentConsole(line: string) {
-  return line.trim().replace(/\s/g, "").startsWith("//console.log(")
+  return line.trim().replace(/\s/g, "").startsWith("//console.info(")
 }

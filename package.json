@@ -1,14 +1,14 @@
 {
-  "name": "vscode-quick-console",
-  "displayName": "Quick Console",
-  "description": "Quick generate console.log for variables with selection or not anywhere",
+  "name": "vscode-quick-console-info",
+  "displayName": "Quick ConsoleInfo",
+  "description": "Quick generate console.info for variables with selection or not anywhere",
   "version": "0.0.13",
   "author": "Efrice",
   "publisher": "Efrice",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Efrice/vscode-quick-console"
+    "url": "https://github.com/evgeniynet/vscode-quick-console"
   },
   "icon": "public/icon.png",
   "engines": {
@@ -23,15 +23,15 @@
     "commands": [
       {
         "command": "quickConsole.createConsoleLog",
-        "title": "create console.log"
+        "title": "create console.info"
       },
       {
         "command": "quickConsole.clearConsoleLog",
-        "title": "clear all console.log"
+        "title": "clear all console.info"
       },
       {
         "command": "quickConsole.toggleConsoleLog",
-        "title": "toggle all console.log's state of comment"
+        "title": "toggle all console.info's state of comment"
       }
     ],
     "keybindings": [

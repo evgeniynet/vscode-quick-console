@@ -6,7 +6,7 @@
 
 ## 0.0.11
 
-- Feature toggle console.log's state of comment in the active file.
+- Feature toggle console.info's state of comment in the active file.
 
 ## 0.0.10
 
@@ -38,7 +38,7 @@
 
 ## 0.0.3
 
-- Clear console.logs in the active file.
+- Clear console.infos in the active file.
 
 ## 0.0.2
 
